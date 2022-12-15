@@ -2,7 +2,7 @@ function multiTable(a) {
     const multiTable = document.getElementById('multiTable')
     multiTable.addEventListener('click', () => {
         // mettre votre code ici 
-        document.getElementById('resultat').innerHTML += a *= a;
+        document.getElementById('resultat').innerHTML += a;
         document.getElementById('resultat').innerHTML += '<br/>';
     })
 }
@@ -16,14 +16,10 @@ function fonctionACorriger(a, b) {
     const fonctionACorriger = document.getElementById('fonctionACorriger')
     fonctionACorriger.addEventListener('click', () => {
         let c = 15
-        if (a + b < c) {
-            document.getElementById('resultat2').innerHTML += 'c superieur';
-            document.getElementById('resultat2').innerHTML += '<br/>';
-        }
-        else {
-            document.getElementById('resultat2').innerHTML += 'c inferieur';
-            document.getElementById('resultat2').innerHTML += '<br/>';
-        }
+        if a + b < c
+            print('c superieur')
+        else
+            print('c inferieur')
     })
 }
 
@@ -32,10 +28,7 @@ fonctionACorriger(9, 7);
 function retourner_un_tableau(tab) {
     const retournerUnTableau = document.getElementById('retournerUnTableau')
     retournerUnTableau.addEventListener('click', () => {
-        tab.forEach(element => {
-            document.getElementById('resultat3').innerHTML += element;
-            document.getElementById('resultat3').innerHTML += '<br/>'; 
-        });
+        // mettre votre code ici 
     })
 }
 
